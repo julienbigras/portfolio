@@ -1,0 +1,19 @@
+.portfolio h2 {
+    text-align: center;
+}
+
+.projectContainer {
+    display: flex;
+    margin: 5% 0;
+    .projectText {
+        width: 40%;
+    }
+    .projectImageContainer {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        .projectImage {
+            width: 60%;
+        }
+    }
+}

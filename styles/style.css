@@ -233,21 +233,20 @@ button {
     background: black; }
 
 header {
-  height: 100vh;
-  max-height: 100vh;
   margin-bottom: 5%; }
 
 .headerFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid grey; }
+  border-bottom: 1px solid grey;
+  height: calc(100vh - 10%); }
   .headerFlexContainer .headerTextContainer {
     width: 50%; }
     .headerFlexContainer .headerTextContainer p:first-child {
       margin-top: 15%; }
     .headerFlexContainer .headerTextContainer h2 {
-      margin-bottom: 10%; }
+      margin-bottom: 5%; }
   .headerFlexContainer .headerPicContainer {
     width: 50%; }
     .headerFlexContainer .headerPicContainer .headerPic {
@@ -262,9 +261,18 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 10%; }
-  .socialMediaIcons ul i {
-    font-size: 1.8rem; }
+  margin-bottom: 5%; }
+  .socialMediaIcons ul .linkedIn {
+    color: #0077B5; }
+  .socialMediaIcons ul .github {
+    color: #211F1F; }
+  .socialMediaIcons ul .twitter {
+    color: #38A1F3; }
+  .socialMediaIcons ul .instagram {
+    color: #DD2A7B; }
+
+nav {
+  height: 10%; }
 
 .navFlexContainer {
   display: -webkit-box;
@@ -328,10 +336,15 @@ header {
       width: 65%; }
   .aboutMeFlexContainer .aboutMeTextContent {
     width: 50%; }
+    .aboutMeFlexContainer .aboutMeTextContent h2 {
+      text-align: center; }
     .aboutMeFlexContainer .aboutMeTextContent .aboutMeButtonContainer {
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .skills ul {
   display: -webkit-box;
@@ -351,6 +364,35 @@ header {
       border-radius: 50%; }
     .skills ul li p {
       margin: 30px 0 15px; }
+
+.portfolio h2 {
+  text-align: center; }
+
+.projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5% 0; }
+  .projectContainer .projectText {
+    width: 40%; }
+  .projectContainer .projectImageContainer {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .projectContainer .projectImageContainer .projectImage {
+      width: 60%; }
+
+.contact h2 {
+  text-align: center; }
+
+form input {
+  border: 3px solid black;
+  border-radius: 25px;
+  padding-left: 5px; }
 
 footer {
   background: black;

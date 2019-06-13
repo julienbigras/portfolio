@@ -11,8 +11,13 @@
     }
     .aboutMeTextContent {
         width: 50%;
+        h2 {
+            text-align: center;
+        }
         .aboutMeButtonContainer {
+            width: 100%;
             display: flex;
+            justify-content: space-around;
         }
     }
 }

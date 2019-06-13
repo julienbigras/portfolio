@@ -1,0 +1,17 @@
+.contact h2 {
+    text-align: center;
+}
+
+form {
+    input {
+        border: $border;
+        border-radius: 25px;
+        padding-left: 5px;
+        // text-transform: uppercase;
+    }
+}
+
+// ::placeholder {
+//     color: black;
+//     opacity: 1;
+// }

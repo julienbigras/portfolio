@@ -47,23 +47,35 @@
                     <div class="socialMediaIcons">
                         <ul>
                             <li>
-                                <a href="https://twitter.com/julien_bigras" target="_blank" aria-label="Go to Julien's Twitter page">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://www.linkedin.com/in/julien-bigras-b4b7b6185" target="_blank" aria-label="Go to Julien's LinkedIn profile">
-                                    <i class="fab fa-linkedin-in"></i>
+                                    <span class="fa-stack fa-2x linkedIn">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                                    </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/julienbigras" target="_blank" aria-label="Go to Julien's GitHub page">
-                                    <i class="fab fa-github"></i>
+                                    <span class="fa-stack fa-2x github">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/julien_bigras" target="_blank" aria-label="Go to Julien's Twitter page">
+                                    <span class="fa-stack fa-2x twitter">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/julien.bigras/" target="_blank" aria-label="Go to Julien's Instagram profile">
-                                    <i class="fab fa-instagram"></i>
+                                    <span class="fa-stack fa-2x instagram">
+                                        <i class="fas fa-square fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
                                 </a>
                             </li>
                         </ul>
@@ -93,10 +105,9 @@
                     </div>
                     <div class="aboutMeTextContent">
                         <h2>About Me</h2>
-                        <p>Hey there! My name is Julien, and I'm a professional drummer turned web developer!</p>
-                        <p>I graduated from</p>
+                        <p>Hey there! My name is Julien, and I'm a professional drummer turned web developer based in Toronto! Through 10+ years of playing music professionally, I've gained an appreciation for hard work and practice, as well as a strong desire to constantly be learning new skills.</p>
                         <p>I have a Web Development Immersive Certificate from HackerYou College of Technology, and a Bachelor of Music Degree from Humber College.</p>
-                        <div class="buttonContainer">
+                        <div class="aboutMeButtonContainer">
                             <button>hire me</button>
                             <button>see my resume</button>
                         </div>
@@ -152,23 +163,75 @@
         </section>
         <section id="portfolio" class="portfolio">
             <h2>Project Portfolio</h2>
-            <p>Here's some stuff I made</p>
-            <div class="project1">
-                <h3></h3>
-            </div>
-            <div class="project2">
-                <h3>JavaScript Project</h3>
-                <p>Captured is a multi-page</p>
-                <p>Tools Used: GitHub / HTML5 / CSS3 / SCSS / JavaScript / JQuery</p>
-            </div>
-            <div class="project3">
-
-            </div>
-            <div class="project4">
-                <h3>Client PSD Conversion</h3>
-                <p>Captured is a multi-page</p>
-                <p>Tools Used: GitHub / HTML5 / CSS3 / SCSS</p>
-            </div>
+            <p>Here's a bunch of stuff I made</p>
+            <div class="projectContainer project1">
+                <div class="projectText">
+                    <h3>Gig Essentials</h3>
+                    <h4>React App</h4>
+                    <p>Drums, cymbals, hardwares... a drummer has to keep track of many individual pieces of gear when leaving for a gig. So I built a handy drummer's packing app to help facilitate the process. Choose items to add to the list, check them off when they're packed, and choose to save the list for next time!</p>
+                    <p>Tools Used: React / Firebase / GitHub / HTML5 / CSS3 / JavaScript</p>
+                    <div class="projectButtonContainer">
+                        <a href="https://julienbigras.github.io/julien-bigras-project-5/" target="_blank"><button>Website</button></a>
+                        <a href="https://github.com/julienbigras/julien-bigras-project-5" target="_blank"><button>GitHub</button></a>
+                    </div>
+                </div> <!-- closes projectText -->
+                <div class="projectImageContainer">
+                    <div class="projectImage">
+                        <img src="./assets/mockup-desktop-computer-white.png" alt="">                    
+                    </div>
+                </div> <!-- closes projectImageContainer -->
+            </div> <!-- closes projectContainer -->
+            <div class="projectContainer project2">
+                <div class="projectImageContainer">
+                    <div class="projectImage">
+                        <img src="./assets/mockup-desktop-computer-white.png" alt="">
+                    </div>
+                </div> <!-- closes projectImageContainer -->
+                <div class="projectText">
+                    <h3>Rock Music Recommendation Generator</h3>
+                    <h4>JavaScript/JQuery Project</h4>
+                    <p>With so much music being so easily accessible these days, it can be difficult to make a decision. Luckily, you can now have that decision made for you by a cute, rock music-loving dog! Answer some questions in this quiz-style app, and you'll be provided with an album recommendation, complete with a photo and a YouTube link.</p>
+                    <p>Tools Used: GitHub / HTML5 / CSS3 / SCSS / JavaScript / JQuery</p>
+                    <div class="projectButtonContainer">
+                        <a href="https://julienbigras.github.io/julien-bigras-project-three/" target="_blank"><button>Website</button></a>
+                        <a href="https://github.com/julienbigras/julien-bigras-project-three" target="_blank"><button>GitHub</button></a>
+                    </div>
+                </div> <!-- closes projectText -->
+            </div> <!-- closes projectContainer -->
+            <div class="projectContainer project3">
+                <div class="projectText">
+                    <h3>Yearly Picks of Hottest Flicks</h3>
+                    <h4>JavaScript/API Project</h4>
+                    <p>Looking for something to watch tonight? This simple app </p>
+                    <p>Tools Used: GitHub / HTML5 / CSS3 / SCSS / JavaScript / JQuery</p>
+                    <div class="projectButtonContainer">
+                        <a href="https://julienbigrassooshimproject4.github.io/yearlyPicksOfHottestFlicks/" target="_blank"><button>Website</button></a>
+                        <a href="https://github.com/julienbigrassooshimproject4/yearlyPicksOfHottestFlicks" target="_blank"><button>GitHub</button></a>
+                    </div>
+                </div> <!-- closes projectText -->
+                <div class="projectImageContainer">
+                    <div class="projectImage">
+                        <img src="./assets/mockup-desktop-computer-white.png" alt="">
+                    </div>
+                </div> <!-- closes projectImageContainer -->
+            </div> <!-- closes projectContainer -->
+            <div class="projectContainer project4">
+                <div class="projectImageContainer">
+                    <div class="projectImage">
+                        <img src="./assets/mockup-desktop-computer-white.png" alt="">
+                    </div>
+                </div> <!-- closes projectImageContainer -->
+                <div class="projectText">
+                    <h3>Captured</h3>
+                    <h4>Client PSD Conversion</h4>
+                    <p>Captured is a multi-page</p>
+                    <p>Tools Used: GitHub / HTML5 / CSS3 / SCSS</p>
+                    <div class="projectButtonContainer">
+                        <a href=""><button>Website</button></a>
+                        <a href="https://github.com/julienbigras/julienBigrasProjectTwo" target="_blank"><button>GitHub</button></a>
+                    </div>
+                </div> <!-- closes projectText -->
+            </div> <!-- closes projectContainer -->
         </section>
         <section id="contact" class="contact">
             <h2>Contact Me</h2>
@@ -181,30 +244,60 @@
                 <label for="email">Email Address</label>
                 <input type="email" id="email" placeholder="Email Address">
 
-                <div class="socialMediaIcons">
-                    <ul>
-                        <li><i class="fab fa-twitter"></i></li>
-                        <li><i class="fab fa-linkedin-in"></i></li>
-                        <li><i class="fab fa-github"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
-                    </ul>
-                </div>
-
             </form>
+
+            <div class="socialMediaIcons">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/julien-bigras-b4b7b6185" target="_blank"
+                            aria-label="Go to Julien's LinkedIn profile">
+                            <span class="fa-stack fa-2x linkedIn">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/julienbigras" target="_blank" aria-label="Go to Julien's GitHub page">
+                            <span class="fa-stack fa-2x github">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/julien_bigras" target="_blank" aria-label="Go to Julien's Twitter page">
+                            <span class="fa-stack fa-2x twitter">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/julien.bigras/" target="_blank"
+                            aria-label="Go to Julien's Instagram profile">
+                            <span class="fa-stack fa-2x instagram">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- closes socialMediaIcons-->
         </section>
     </main>
+
     <footer>
-        <p>Created by Julien Bigras</p>
+        <p>&copy 2019 by Julien Bigras</p>
     </footer>
     
 </body>
 </html>
 
-            <!-- <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-sass"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-git-alt"></i>
-                        <i class="fab fa-github"></i> -->
-            <!-- gotta find jquery and firebase and VScode -->
+    <!-- <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-sass"></i>
+    <i class="fab fa-js"></i>
+    <i class="fab fa-react"></i>
+    <i class="fab fa-git-alt"></i>
+    <i class="fab fa-github"></i> -->

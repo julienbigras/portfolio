@@ -1,6 +1,6 @@
 header {
-    height: 100vh;
-    max-height: 100vh;
+    // height: 100vh;
+    // max-height: 100vh;
     margin-bottom: 5%;
     // border-bottom: 1px solid grey;
 }
@@ -8,13 +8,14 @@ header {
 .headerFlexContainer {
     display: flex;
     border-bottom: 1px solid grey;
+    height: calc(100vh - 10%);
     .headerTextContainer {
         width: 50%;
         p:first-child {
             margin-top: 15%;
         }
         h2 {
-            margin-bottom: 10%;
+            margin-bottom: 5%;
         }
     }
     .headerPicContainer {
@@ -30,8 +31,17 @@ header {
     width: 55%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10%;
-    i {
-        font-size: 1.8rem;
+    margin-bottom: 5%;
+    .linkedIn {
+        color: #0077B5;
+    }
+    .github {
+        color: #211F1F;
+    }
+    .twitter {
+        color: #38A1F3;
+    }
+    .instagram {
+        color: #DD2A7B;
     }
 }
