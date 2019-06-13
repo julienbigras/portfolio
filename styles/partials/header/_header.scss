@@ -1,0 +1,37 @@
+header {
+    height: 100vh;
+    max-height: 100vh;
+    margin-bottom: 5%;
+    // border-bottom: 1px solid grey;
+}
+
+.headerFlexContainer {
+    display: flex;
+    border-bottom: 1px solid grey;
+    .headerTextContainer {
+        width: 50%;
+        p:first-child {
+            margin-top: 15%;
+        }
+        h2 {
+            margin-bottom: 10%;
+        }
+    }
+    .headerPicContainer {
+        width: 50%;
+        .headerPic {
+            width: 63.45%;
+            margin-left: 35%;
+        }
+    }
+}
+
+.socialMediaIcons ul {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    i {
+        font-size: 1.8rem;
+    }
+}

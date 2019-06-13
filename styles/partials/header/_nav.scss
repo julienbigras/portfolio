@@ -1,0 +1,44 @@
+.navFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    ul {
+    display: flex;
+        li {
+            text-transform: uppercase;
+            margin-right: 20px;
+            &:hover {
+                border-bottom: 3px solid black;
+            }
+            a {
+                color: black;
+            }
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.navLogo {
+    display: flex;
+    .headshot {
+        max-height: 65px;
+        max-width: 65px;
+        margin: 5px 20px 0 0;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .textContent {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.headshot {
+    max-height: 75px;
+    max-width: 75px;
+    img {
+        border-radius: 50%;
+    }
+}

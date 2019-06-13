@@ -1,0 +1,18 @@
+.aboutMeFlexContainer {
+    display: flex;
+    .aboutMePicOuterContainer {
+        width: 50%;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        .aboutMePic {
+            width: 65%;
+        }
+    }
+    .aboutMeTextContent {
+        width: 50%;
+        .aboutMeButtonContainer {
+            display: flex;
+        }
+    }
+}
