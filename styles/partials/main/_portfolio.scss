@@ -1,19 +1,33 @@
-.portfolio h2 {
+.portfolio h2,
+.portfolio h3,
+.portfolio h4 {
     text-align: center;
+}
+
+.portfolio h2 {
+    border-bottom: $bottom;
+    padding-bottom: 15px;
+    margin-bottom: 2%;
 }
 
 .projectContainer {
     display: flex;
     margin: 5% 0;
     .projectText {
-        width: 40%;
+        width: 50%;
+        .projectButtonContainer {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around
+        }
     }
     .projectImageContainer {
-        width: 60%;
+        width: 50%;
         display: flex;
-        justify-content: center;
         .projectImage {
-            width: 60%;
+            width: 90%;
         }
     }
 }
+

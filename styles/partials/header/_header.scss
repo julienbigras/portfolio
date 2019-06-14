@@ -1,8 +1,11 @@
 header {
     // height: 100vh;
     // max-height: 100vh;
-    margin-bottom: 5%;
     // border-bottom: 1px solid grey;
+    margin-bottom: 5%;
+    span:hover {
+        color: white;
+    }
 }
 
 .headerFlexContainer {
@@ -45,3 +48,4 @@ header {
         color: #DD2A7B;
     }
 }
+
