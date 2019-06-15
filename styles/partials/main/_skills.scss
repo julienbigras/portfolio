@@ -1,7 +1,12 @@
+.skills {
+    background: grey;
+    padding: 3.5% 0;
+    margin: 5% 0;
+}
+
 .skills ul {
     display: flex;
     flex-wrap: wrap;
-    margin: 5% 0;
     li {
         width: 20%;
         text-align: center;

@@ -41,11 +41,10 @@
         <div class="wrapper">
             <div class="headerFlexContainer">
                 <div class="headerTextContainer">
-                    <p>Hi there, I'm</p>
                     <h1>Julien Bigras</h1>
                     <h2>Web Developer</h2>
                     <div class="socialMediaIcons">
-                        <ul>
+                        <ul class="headerSocials">
                             <li>
                                 <a href="https://www.linkedin.com/in/julien-bigras-b4b7b6185" target="_blank" aria-label="Go to Julien's LinkedIn profile">
                                     <span class="fa-stack fa-2x linkedIn">
@@ -168,31 +167,29 @@
             <div class="projectContainer project1">
                 <div class="projectText">
                     <h3>Gig Essentials</h3>
-                    <h4>React App</h4>
                     <p>Drums, cymbals, hardwares... a drummer has to keep track of many individual pieces of gear when leaving for a gig. So I built a handy drummer's packing app to help facilitate the process. Choose items to add to the list, check them off when they're packed, and choose to save the list for next time!</p>
-                    <p>Tools Used: React / Firebase / GitHub / HTML5 / CSS3 / JavaScript</p>
+                    <p>Tools Used: React | Firebase | GitHub | HTML5 | CSS3 | JavaScript</p>
                     <div class="projectButtonContainer">
                         <a href="https://julienbigras.github.io/julien-bigras-project-5/" target="_blank"><button>Website</button></a>
                         <a href="https://github.com/julienbigras/julien-bigras-project-5" target="_blank"><button>GitHub</button></a>
                     </div>
                 </div> <!-- closes projectText -->
-                <div class="projectImageContainer">
+                <div class="projectImageContainer imageRight">
                     <div class="projectImage">
                         <img src="./assets/mockup-desktop-computer-white.png" alt="">                    
                     </div>
                 </div> <!-- closes projectImageContainer -->
             </div> <!-- closes projectContainer -->
             <div class="projectContainer project2">
-                <div class="projectImageContainer">
+                <div class="projectImageContainer imageLeft">
                     <div class="projectImage">
                         <img src="./assets/mockup-desktop-computer-white.png" alt="">
                     </div>
                 </div> <!-- closes projectImageContainer -->
                 <div class="projectText">
                     <h3>Rock Music Recommendation Generator</h3>
-                    <h4>JavaScript/JQuery Project</h4>
                     <p>With so much music being so easily accessible these days, it can be difficult to make a decision. Luckily, you can now have that decision made for you by a cute, rock music-loving dog! Answer some questions in this quiz-style app, and you'll be provided with an album recommendation, complete with a photo and a YouTube link.</p>
-                    <p>Tools Used: GitHub / HTML5 / CSS3 / SCSS / JavaScript / JQuery</p>
+                    <p>Tools Used: GitHub | HTML5 | CSS3 | SCSS | JavaScript | JQuery</p>
                     <div class="projectButtonContainer">
                         <a href="https://julienbigras.github.io/julien-bigras-project-three/" target="_blank"><button>Website</button></a>
                         <a href="https://github.com/julienbigras/julien-bigras-project-three" target="_blank"><button>GitHub</button></a>
@@ -202,31 +199,29 @@
             <div class="projectContainer project3">
                 <div class="projectText">
                     <h3>Yearly Picks of Hottest Flicks</h3>
-                    <h4>JavaScript/API Project</h4>
                     <p>Looking for something to watch tonight? This simple app </p>
-                    <p>Tools Used: GitHub / HTML5 / CSS3 / SCSS / JavaScript / JQuery</p>
+                    <p>Tools Used: GitHub | HTML5 | CSS3 | SCSS | JavaScript | JQuery</p>
                     <div class="projectButtonContainer">
                         <a href="https://julienbigrassooshimproject4.github.io/yearlyPicksOfHottestFlicks/" target="_blank"><button>Website</button></a>
                         <a href="https://github.com/julienbigrassooshimproject4/yearlyPicksOfHottestFlicks" target="_blank"><button>GitHub</button></a>
                     </div>
                 </div> <!-- closes projectText -->
-                <div class="projectImageContainer">
+                <div class="projectImageContainer imageRight">
                     <div class="projectImage">
                         <img src="./assets/mockup-desktop-computer-white.png" alt="">
                     </div>
                 </div> <!-- closes projectImageContainer -->
             </div> <!-- closes projectContainer -->
             <div class="projectContainer project4">
-                <div class="projectImageContainer">
+                <div class="projectImageContainer imageLeft">
                     <div class="projectImage">
                         <img src="./assets/mockup-desktop-computer-white.png" alt="">
                     </div>
                 </div> <!-- closes projectImageContainer -->
                 <div class="projectText">
                     <h3>Captured</h3>
-                    <h4>Client PSD Conversion</h4>
                     <p>Captured is a multi-page</p>
-                    <p>Tools Used: GitHub / HTML5 / CSS3 / SCSS</p>
+                    <p>Tools Used: GitHub | HTML5 | CSS3 | SCSS</p>
                     <div class="projectButtonContainer">
                         <a href=""><button>Website</button></a>
                         <a href="https://github.com/julienbigras/julienBigrasProjectTwo" target="_blank"><button>GitHub</button></a>
@@ -240,17 +235,23 @@
                 <h2>Contact Me</h2>
                 <h3>Let's get in touch and work together, shall we?</h3>
                 <form action="">
-                    
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Name">
+                    <div class="nameInput">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Email Address">
+                    <div class="emailInput">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Email Address">
+                    </div>
+
+                    <label for="message">What Can I Do For You?</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
                 </form>
 
                 <div class="socialMediaIcons">
-                    <ul>
+                    <ul class="contactSocials">
                         <li>
                             <a href="https://www.linkedin.com/in/julien-bigras-b4b7b6185" target="_blank"
                                 aria-label="Go to Julien's LinkedIn profile">
@@ -295,6 +296,9 @@
         <p>&copy 2019 by Julien Bigras</p>
     </footer>
     
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> -->
+    <!-- <script src="scripts.js"></script> -->
+
 </body>
 </html>
 
