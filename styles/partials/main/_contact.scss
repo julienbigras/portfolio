@@ -1,13 +1,16 @@
-.contact h2 {
-    text-align: center;
-    margin-bottom: 2%;
-    border-bottom: $bottom;
+.contact {
+    h2 {
+        text-align: center;
+        margin-bottom: 2%;
+        padding-bottom: 15px;
+        border-bottom: $bottom;
+    }
+    h3 {
+        text-align: center;
+        margin-bottom: 5%;
+    }
 }
 
-.contact h3 {
-    text-align: center;
-    margin-bottom: 5%;
-}
 
 form {
     width: 70%;
@@ -36,11 +39,22 @@ form {
     }
 }
 
-
 .contactSocials {
     width: 60%;
     margin: 0 auto;
     margin-top: 3%;
+    i {
+        font-size: 1.5rem;
+        border: $border;
+        border-radius: 50%;
+        padding: 15px;
+        color: white;
+        background: black;
+    }
+    i:hover {
+        background: deepskyblue;
+        // color: black;
+    }
 }
 
 // ::placeholder {

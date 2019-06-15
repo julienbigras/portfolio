@@ -1,0 +1,34 @@
+@media (max-width: 1000px) {
+
+    // PORTFOLIO STYLES
+
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 5% 0;
+        .projectText {
+            width: 100%;
+            p:first-of-type {
+                text-align: center;
+            }
+            // .projectButtonContainer {
+            //     width: 70%;
+            //     margin: 0 auto;
+            //     display: flex;
+            //     justify-content: space-around
+            // }
+        }
+        .projectImageContainer {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 5%;
+            .projectImage {
+                width: 70%;
+            }
+        }
+    }
+
+    .flexColumnReverse {
+        flex-direction: column-reverse;
+    }   
+}

@@ -255,8 +255,9 @@ a {
 }
 
 .wrapper {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 h1 {
@@ -265,15 +266,16 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
-h4 {
-  font-size: 1.2rem;
+p {
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 
 i {
@@ -305,7 +307,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid grey;
   height: calc(100vh - 10%);
 }
 
@@ -429,6 +430,18 @@ nav {
   border-radius: 50%;
 }
 
+.aboutMe h2 {
+  text-align: center;
+  margin-bottom: 3%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+}
+
+.aboutMe h3 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
 .aboutMeFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,13 +467,6 @@ nav {
   width: 60%;
 }
 
-.aboutMeFlexContainer .aboutMeTextContent h2 {
-  text-align: center;
-  margin-bottom: 8%;
-  padding-bottom: 15px;
-  border-bottom: 1px solid grey;
-}
-
 .aboutMeFlexContainer .aboutMeTextContent .aboutMeButtonContainer {
   width: 100%;
   display: -webkit-box;
@@ -471,9 +477,19 @@ nav {
 }
 
 .skills {
-  background: grey;
   padding: 3.5% 0;
-  margin: 5% 0;
+  margin: 2% 0;
+}
+
+.skills h2 {
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+  margin-bottom: 2%;
+}
+
+.skills h3 {
+  text-align: center;
 }
 
 .skills ul {
@@ -482,6 +498,7 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 5%;
 }
 
 .skills ul li {
@@ -495,43 +512,52 @@ nav {
   padding: 20px;
   border: 3px solid black;
   border-radius: 50%;
+  color: white;
+  background: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.skills ul li i:hover {
+  background: deepskyblue;
 }
 
 .skills ul li p {
   margin: 30px 0 15px;
 }
 
-.portfolio h2,
-.portfolio h3,
-.portfolio h4 {
-  text-align: center;
-}
-
 .portfolio h2 {
   border-bottom: 1px solid grey;
   padding-bottom: 15px;
   margin-bottom: 2%;
+  text-align: center;
+}
+
+.portfolio h3 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.portfolio p:first-of-type {
+  margin-bottom: 2%;
+  text-align: center;
+  font-style: italic;
 }
 
 .projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5% 0;
+  margin: 10% 0;
 }
 
 .projectContainer .projectText {
-  width: 50%;
+  width: 55%;
 }
 
 .projectContainer .projectText .projectButtonContainer {
   width: 70%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin-top: 5%;
 }
 
 .projectContainer .projectImageContainer {
@@ -539,6 +565,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projectContainer .projectImageContainer .projectImage {
@@ -554,6 +583,7 @@ nav {
 .contact h2 {
   text-align: center;
   margin-bottom: 2%;
+  padding-bottom: 15px;
   border-bottom: 1px solid grey;
 }
 
@@ -609,6 +639,19 @@ form label {
   margin-top: 3%;
 }
 
+.contactSocials i {
+  font-size: 1.5rem;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+  background: black;
+}
+
+.contactSocials i:hover {
+  background: deepskyblue;
+}
+
 footer {
   background: black;
   text-align: center;
@@ -619,5 +662,40 @@ footer p {
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px 0;
+}
+
+@media (max-width: 1000px) {
+  .projectContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5% 0;
+  }
+  .projectContainer .projectText {
+    width: 100%;
+  }
+  .projectContainer .projectText p:first-of-type {
+    text-align: center;
+  }
+  .projectContainer .projectImageContainer {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5%;
+  }
+  .projectContainer .projectImageContainer .projectImage {
+    width: 70%;
+  }
+  .flexColumnReverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 /*# sourceMappingURL=style.css.map */
