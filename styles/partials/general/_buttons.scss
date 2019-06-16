@@ -1,15 +1,16 @@
 button {
     font-size: 0.9rem;
     font-weight: bold;
-    background: white;
+    color: white;
+    background: black;
     border: $border;
     border-radius: 25px;
     padding: 10px 25px;
     text-transform: uppercase;
-    transition: all 0.5s;
+    transition: all 0.3s;
     &:hover,
     &:focus {
-        color: white;
-        background: black;
+        // color: white;
+        background: deepskyblue;
     }
 }
