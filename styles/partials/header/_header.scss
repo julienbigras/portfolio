@@ -1,17 +1,16 @@
 header {
     background: $bgMain;
-    // height: 100vh;
-    // max-height: 100vh;
-    // min-height: calc(100vh - 81px);
-    // border-bottom: 1px solid grey;
+    margin-top: 81px;
 }
 
 .headerFlexContainer {
     display: flex;
-    // border-bottom: 1px solid grey;
-    // height: calc(100vh - 81px);
-    .headerTextContainer {
-        width: 50%;
+        .headerTextContainer {
+            width: 50%;
+        .innerTextContainer {
+            position: relative;
+            left: 12%;
+        }
         h1 {
             margin: 30% 0 3%;
         }
@@ -29,4 +28,3 @@ header {
         }
     }
 }
-

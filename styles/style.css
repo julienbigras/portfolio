@@ -309,6 +309,7 @@ button:hover, button:focus {
 
 header {
   background: #fcfcfc;
+  margin-top: 81px;
 }
 
 .headerFlexContainer {
@@ -319,6 +320,11 @@ header {
 
 .headerFlexContainer .headerTextContainer {
   width: 50%;
+}
+
+.headerFlexContainer .headerTextContainer .innerTextContainer {
+  position: relative;
+  left: 12%;
 }
 
 .headerFlexContainer .headerTextContainer h1 {
@@ -342,6 +348,9 @@ header {
 
 nav {
   background: #141414;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .navFlexContainer {
@@ -397,15 +406,16 @@ nav {
 .navLinks li {
   text-transform: uppercase;
   margin-right: 20px;
-  padding: 32px 0 3px;
+  padding-top: 32px;
 }
 
-.navLinks li:hover {
+.navLinks li:hover a {
   border-bottom: 3px solid #fcfcfc;
 }
 
 .navLinks li a {
   color: #fcfcfc;
+  padding-bottom: 3px;
 }
 
 .navLinks li:last-child {
@@ -429,7 +439,7 @@ nav {
 }
 
 .aboutMe {
-  background: #c9d1dd;
+  background: #F2F2F2;
   padding: 5% 0;
 }
 
@@ -462,8 +472,13 @@ nav {
 }
 
 .aboutMeFlexContainer .aboutMePicOuterContainer .aboutMePic {
-  width: 75%;
+  width: 90%;
   border: 3px solid black;
+  border-radius: 50%;
+}
+
+.aboutMeFlexContainer .aboutMePicOuterContainer .aboutMePic img {
+  border-radius: 50%;
 }
 
 .aboutMeFlexContainer .aboutMeTextContent {
@@ -529,7 +544,7 @@ nav {
 }
 
 .portfolio {
-  background: #c9d1dd;
+  background: #F2F2F2;
   padding: 5% 0;
 }
 
@@ -649,7 +664,7 @@ form .emailInput {
 
 form input {
   border: 1px solid grey;
-  background: #c9d1dd;
+  background: #F2F2F2;
   border-radius: 25px;
   padding: 10px 0 10px 20px;
   margin-bottom: 3%;
@@ -659,7 +674,7 @@ form textarea {
   width: 100%;
   border: 1px solid grey;
   border-radius: 25px;
-  background: #c9d1dd;
+  background: #F2F2F2;
   padding: 10px 0 10px 20px;
   resize: none;
 }
@@ -720,7 +735,7 @@ footer p {
   .navLinks {
     position: absolute;
     right: 0;
-    height: 60vh;
+    height: calc(100vh - 81px);
     top: 81px;
     background: #141414;
     display: -webkit-box;
@@ -730,9 +745,8 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 30%;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -742,7 +756,7 @@ footer p {
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
   .navLinks li {
-    margin: 5px 0;
+    margin-left: 20%;
     padding-bottom: 3px;
   }
   .hamburger {
@@ -772,6 +786,9 @@ footer p {
   }
   .hamburger {
     right: 5%;
+  }
+  .headerFlexContainer .headerTextContainer h1 {
+    margin-top: 35%;
   }
   .aboutMeFlexContainer {
     -webkit-box-orient: vertical;
@@ -839,17 +856,55 @@ footer p {
   form {
     width: 90%;
   }
+  .contactSocials {
+    width: 60%;
+  }
 }
 
-@media (max-width: 675px) {
+@media (max-width: 805px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   h3 {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 682px) {
+  .headerFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerFlexContainer .headerTextContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headerFlexContainer .headerTextContainer .innerTextContainer {
+    position: static;
+  }
+  .headerFlexContainer .headerTextContainer h1 {
+    margin: 5% 0 3%;
+  }
+  .headerFlexContainer .headerTextContainer h2 {
+    margin-bottom: -5%;
+    font-weight: normal;
+  }
+  .headerFlexContainer .headerPicContainer {
+    width: 100%;
+  }
+  .headerFlexContainer .headerPicContainer .headerPic {
+    width: 80%;
+    margin: 0 auto;
   }
   .navLinks {
     width: 50%;
@@ -866,6 +921,31 @@ footer p {
   }
   .projectContainer .projectImageContainer .projectImage {
     width: 100%;
+  }
+  .contact p {
+    font-size: 0.9rem;
+  }
+  .contactSocials i {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  form label {
+    font-size: 0.85rem;
+  }
+  .contactSocials {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,11 +18,14 @@
     .aboutMePicOuterContainer {
         width: 40%;
         display: flex;
-        // justify-content: center;
         align-items: center;
         .aboutMePic {
-            width: 75%;
+            width: 90%;
             border: $border;
+            border-radius: 50%;
+            img {
+                border-radius: 50%;
+            }
         }
     }
     .aboutMeTextContent {
