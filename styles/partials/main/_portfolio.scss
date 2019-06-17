@@ -1,4 +1,6 @@
 .portfolio {
+    background: $bgMain;
+    padding-bottom: 5%;
     h2 {
         border-bottom: $bottom;
         padding-bottom: 15px;
@@ -44,4 +46,8 @@
 
 .projectButtonContainer button:first-child {
     margin-right: 10px;
+}
+
+.projectContainer:last-child {
+    margin-bottom: 0;
 }

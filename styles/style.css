@@ -291,7 +291,7 @@ button {
   font-size: 0.9rem;
   font-weight: bold;
   color: white;
-  background: black;
+  background: #141414;
   border: 3px solid black;
   border-radius: 25px;
   padding: 10px 25px;
@@ -301,10 +301,12 @@ button {
 }
 
 button:hover, button:focus {
-  background: deepskyblue;
+  color: #141414;
+  background: white;
 }
 
 header {
+  min-height: calc(100vh - 81px);
   margin-bottom: 5%;
 }
 
@@ -312,25 +314,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: calc(100vh - 80px);
 }
 
 .headerFlexContainer .headerTextContainer {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .headerFlexContainer .headerTextContainer h1 {
-  margin-bottom: 3%;
+  margin: 25% 0 3%;
 }
 
 .headerFlexContainer .headerTextContainer h2 {
@@ -342,39 +333,8 @@ header {
   border-bottom: 1px solid grey;
 }
 
-.headerFlexContainer .headerPicContainer .headerPic {
-  width: 94.3%;
-}
-
-.socialMediaIcons ul {
-  width: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 5%;
-}
-
-.socialMediaIcons ul .linkedIn {
-  color: #0077B5;
-}
-
-.socialMediaIcons ul .github {
-  color: #211F1F;
-}
-
-.socialMediaIcons ul .twitter {
-  color: #38A1F3;
-}
-
-.socialMediaIcons ul .instagram {
-  color: #DD2A7B;
-}
-
 nav {
-  height: 80px;
+  background: #141414;
 }
 
 .navFlexContainer {
@@ -384,29 +344,31 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navLinks ul {
+.navLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.navLinks ul li {
+.navLinks li {
   text-transform: uppercase;
   margin-right: 20px;
-  padding: 20px 0 3px;
 }
 
-.navLinks ul li:hover {
-  border-bottom: 3px solid black;
+.navLinks li:hover {
+  border-bottom: 3px solid white;
 }
 
-.navLinks ul li a {
-  color: black;
+.navLinks li a {
+  color: white;
 }
 
-.navLinks ul li:last-child {
+.navLinks li:last-child {
   margin-right: 0;
 }
 
@@ -419,7 +381,7 @@ nav {
 .navLogo .headshot {
   max-height: 65px;
   max-width: 65px;
-  margin: 5px 20px 0 0;
+  margin: 8px 20px 8px 0;
 }
 
 .navLogo .headshot img {
@@ -443,6 +405,17 @@ nav {
 
 .headshot img {
   border-radius: 50%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
 }
 
 .aboutMe h2 {
@@ -482,16 +455,8 @@ nav {
   width: 60%;
 }
 
-.aboutMeFlexContainer .aboutMeTextContent .aboutMeButtonContainer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .skills {
+  background: #dbe7ff;
   padding: 3.5% 0 1%;
   margin: 2% 0;
 }
@@ -529,13 +494,14 @@ nav {
   border: 3px solid black;
   border-radius: 50%;
   color: white;
-  background: black;
+  background: #141414;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .skills ul li i:hover {
-  background: deepskyblue;
+  color: #141414;
+  background: white;
 }
 
 .skills ul li i:hover ~ p {
@@ -546,6 +512,11 @@ nav {
   margin: 30px 0 10px;
   font-weight: bold;
   visibility: hidden;
+}
+
+.portfolio {
+  background: white;
+  padding-bottom: 5%;
 }
 
 .portfolio h2 {
@@ -612,6 +583,15 @@ nav {
   margin-right: 10px;
 }
 
+.projectContainer:last-child {
+  margin-bottom: 0;
+}
+
+.contact {
+  background: #dbe7ff;
+  padding-top: 5%;
+}
+
 .contact h2 {
   text-align: center;
   margin-bottom: 2%;
@@ -666,9 +646,16 @@ form label {
 }
 
 .contactSocials {
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
   margin-top: 3%;
+  padding-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contactSocials i {
@@ -677,15 +664,16 @@ form label {
   border-radius: 50%;
   padding: 15px;
   color: white;
-  background: black;
+  background: #141414;
 }
 
 .contactSocials i:hover {
-  background: deepskyblue;
+  background: white;
+  color: #141414;
 }
 
 footer {
-  background: black;
+  background: #141414;
   text-align: center;
 }
 
@@ -694,6 +682,50 @@ footer p {
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px 0;
+}
+
+@media (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navLinks {
+    position: absolute;
+    right: 0;
+    height: calc(100vh - 81px);
+    top: 81px;
+    background: #141414;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .navLinks li {
+    margin-right: 0;
+    padding-bottom: 3px;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .navActive {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -766,6 +798,12 @@ footer p {
 }
 
 @media (max-width: 675px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
   h3 {
     font-size: 1.5rem;
   }

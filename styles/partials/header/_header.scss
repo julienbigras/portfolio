@@ -1,6 +1,7 @@
 header {
     // height: 100vh;
     // max-height: 100vh;
+    min-height: calc(100vh - 81px);
     // border-bottom: 1px solid grey;
     margin-bottom: 5%;
 }
@@ -8,14 +9,11 @@ header {
 .headerFlexContainer {
     display: flex;
     // border-bottom: 1px solid grey;
-    height: calc(100vh - 80px);
+    // height: calc(100vh - 80px);
     .headerTextContainer {
         width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         h1 {
-            margin-bottom: 3%;
+            margin: 25% 0 3%;
         }
         h2 {
             margin-bottom: 5%;
@@ -25,30 +23,11 @@ header {
         width: 50%;
         border-bottom: $bottom;
         // background-image: url(../assets/ticTacToeBackground.png);
-        .headerPic {
-            width: 94.3%;
-            // width: 63.45%;
-            // margin-left: 35%;
-        }
-    }
-}
-
-.socialMediaIcons ul {
-    width: 55%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5%;
-    .linkedIn {
-        color: #0077B5;
-    }
-    .github {
-        color: #211F1F;
-    }
-    .twitter {
-        color: #38A1F3;
-    }
-    .instagram {
-        color: #DD2A7B;
+        // .headerPic {
+        //     width: 94.3%;
+        //     // width: 63.45%;
+        //     // margin-left: 35%;
+        // }
     }
 }
 

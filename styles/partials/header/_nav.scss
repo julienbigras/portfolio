@@ -1,29 +1,29 @@
 nav {
-    height: 80px;
+    // height: 80px;
+    background: $black;
 }
 
 .navFlexContainer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navLinks {
-    ul {
     display: flex;
-        li {
-            text-transform: uppercase;
-            margin-right: 20px;
-            padding: 20px 0 3px;
-            &:hover {
-                border-bottom: 3px solid black;
-            }
-            a {
-                color: black;
-            }
+    li {
+        text-transform: uppercase;
+        margin-right: 20px;
+        // padding: 20px 0 3px;
+        &:hover {
+            border-bottom: 3px solid $bgMain;
         }
-        li:last-child {
-            margin-right: 0;
+        a {
+            color: $bgMain;
         }
+    }
+    li:last-child {
+        margin-right: 0;
     }
 }
 
@@ -48,7 +48,7 @@ nav {
     .headshot {
         max-height: 65px;
         max-width: 65px;
-        margin: 5px 20px 0 0;
+        margin: 8px 20px 8px 0;
         img {
             border-radius: 50%;
         }
@@ -65,6 +65,17 @@ nav {
     img {
         border-radius: 50%;
     }
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: $bgMain;
+    margin: 5px;
 }
 
 // https://codepen.io/designcouch/pen/Atyop

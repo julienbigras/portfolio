@@ -1,8 +1,8 @@
 footer {
-    background: black;
+    background: $black;
     text-align: center;
     p {
-        color: white;
+        color: $bgMain;
         text-transform: uppercase;
         font-weight: bold;
         padding: 20px 0;

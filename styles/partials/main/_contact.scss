@@ -1,4 +1,6 @@
 .contact {
+    background: $bgAccent;
+    padding-top: 5%;
     h2 {
         text-align: center;
         margin-bottom: 2%;
@@ -40,24 +42,35 @@ form {
 }
 
 .contactSocials {
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
     margin-top: 3%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
     i {
         font-size: 1.5rem;
         border: $border;
         border-radius: 50%;
         padding: 15px;
-        color: white;
-        background: black;
+        color: $bgMain;
+        background: $black;
     }
     i:hover {
-        background: deepskyblue;
-        // color: black;
+        background: $bgMain;
+        color: $black;
     }
 }
 
-// ::placeholder {
-//     color: black;
-//     opacity: 1;
+
+// .socialMediaIcons ul {
+//     // width: 55%;
+//     // display: flex;
+//     // justify-content: space-between;
+//     // margin-bottom: 5%;
 // }
+
+// // ::placeholder {
+// //     color: black;
+// //     opacity: 1;
+// // }

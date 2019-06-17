@@ -1,4 +1,5 @@
 .skills {
+    background: $bgAccent;
     padding: 3.5% 0 1%;
     margin: 2% 0;
     h2 {
@@ -24,15 +25,15 @@
             font-size: 4rem;
             margin-top: 20px;
             padding: 20px;
-            border: 3px solid black;
+            border: $border;
             border-radius: 50%;
-            color: white;
-            background: black;
+            color: $bgMain;
+            background: $black;
             transition: all 0.3s;
         }
         i:hover {
-            // color: black;
-            background: deepskyblue;
+            color: $black;
+            background: $bgMain;
         }
         i:hover ~ p {
             visibility: visible;

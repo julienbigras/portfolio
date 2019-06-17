@@ -1,8 +1,8 @@
 button {
     font-size: 0.9rem;
     font-weight: bold;
-    color: white;
-    background: black;
+    color: $bgMain;
+    background: $black;
     border: $border;
     border-radius: 25px;
     padding: 10px 25px;
@@ -10,7 +10,7 @@ button {
     transition: all 0.3s;
     &:hover,
     &:focus {
-        // color: white;
-        background: deepskyblue;
+        color: $black;
+        background: $bgMain;
     }
 }
