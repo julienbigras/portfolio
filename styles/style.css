@@ -224,6 +224,7 @@ textarea {
 html {
   font-size: 125%;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -336,6 +337,7 @@ header {
 .headerFlexContainer .headerPicContainer .headerPic {
   width: 105%;
   max-width: 600px;
+  margin-left: 5%;
 }
 
 nav {
@@ -469,7 +471,6 @@ nav {
 }
 
 .skills {
-  border: 2px solid red;
   background: #fcfcfc;
   padding: 5% 0 1%;
 }
@@ -648,6 +649,7 @@ form .emailInput {
 
 form input {
   border: 1px solid grey;
+  background: #c9d1dd;
   border-radius: 25px;
   padding: 10px 0 10px 20px;
   margin-bottom: 3%;
@@ -657,6 +659,8 @@ form textarea {
   width: 100%;
   border: 1px solid grey;
   border-radius: 25px;
+  background: #c9d1dd;
+  padding: 10px 0 10px 20px;
   resize: none;
 }
 
