@@ -1,18 +1,35 @@
-// $(document).ready(function () {
-
-//     $('#nav-icon3').click(function () {
-//         $(this).toggleClass('open');
-//     });
-
-// });
-
 const navSlide = () => {
-    const burger = document.querySelector('.hamburger');
-    const nav = document.querySelector('.navLinks');
+    const burger = $('.hamburger');
+    const nav = $('.navLinks');
 
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('navActive')
-    }) 
+    burger.on('click', () => {
+        nav.toggleClass('navActive');
+        burger.toggleClass('exit');
+    })
 }
 
-navSlide();
+const scrollToSection = () => {
+    const link = $('a.scrollTo');
+
+    link.on('click', function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 1500);
+    })
+}
+
+const typed = new Typed('#typed', {
+    strings: ["Web Developer", "Drummer", "Dog Enthusiast", "Fun Guy"],
+    backSpeed: 50,
+    typeSpeed: 100,
+    loop: true
+})
+
+$(document).ready(function () {
+
+    navSlide();
+    scrollToSection();
+
+});

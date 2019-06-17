@@ -1,33 +1,34 @@
 header {
+    background: $bgMain;
     // height: 100vh;
     // max-height: 100vh;
-    min-height: calc(100vh - 81px);
+    // min-height: calc(100vh - 81px);
     // border-bottom: 1px solid grey;
-    margin-bottom: 5%;
 }
 
 .headerFlexContainer {
     display: flex;
     // border-bottom: 1px solid grey;
-    // height: calc(100vh - 80px);
+    // height: calc(100vh - 81px);
     .headerTextContainer {
         width: 50%;
         h1 {
-            margin: 25% 0 3%;
+            margin: 30% 0 3%;
         }
         h2 {
             margin-bottom: 5%;
+            font-weight: normal;
         }
     }
     .headerPicContainer {
         width: 50%;
-        border-bottom: $bottom;
-        // background-image: url(../assets/ticTacToeBackground.png);
-        // .headerPic {
-        //     width: 94.3%;
-        //     // width: 63.45%;
-        //     // margin-left: 35%;
-        // }
+        .headerPic {
+            width: 105%;
+            // border-bottom: $bottom;
+            max-width: 600px;
+            // width: 63.45%;
+            // margin-left: 35%;
+        }
     }
 }
 

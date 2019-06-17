@@ -29,11 +29,11 @@
                     </div>
                     <div>
                         <ul class="navLinks">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#aboutMe">About Me</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a class="scrollTo" href="#home">Home</a></li>
+                            <li><a class="scrollTo" href="#aboutMe">About Me</a></li>
+                            <li><a class="scrollTo" href="#skills">Skills</a></li>
+                            <li><a class="scrollTo" href="#portfolio">Portfolio</a></li>
+                            <li><a class="scrollTo" href="#contact">Contact</a></li>
                         </ul>
                     </div> <!-- closes navLinks-->
                     <div class="hamburger">
@@ -44,19 +44,20 @@
                 </div> <!-- closes navFlexContainer -->
             </div> <!-- closes nav wrapper -->
         </nav>
-        <div class="wrapper">
+        <!-- <div class="wrapper"> -->
             <div class="headerFlexContainer">
                 <div class="headerTextContainer">
                     <h1>Julien Bigras</h1>
-                    <h2>Web Developer</h2>
+                    <h2>I am a <span id="typed"></span></h2>
+                    <span id="typed"></span>
                 </div> <!-- closes headerTextContainer -->
                 <div class="headerPicContainer">
                     <div class="headerPic">
-                        <img src="./assets/julienBigrasHeaderPicBackground.png" alt="Julien Bigras">
+                        <img src="./assets/julienBigrasHeaderPicBackgroundEdit.png" alt="Julien Bigras">
                     </div>
                 </div>
             </div> <!-- closes headerFlexContainer -->
-        </div> <!-- closes wrapper -->
+        <!-- </div> closes wrapper -->
     </header>
 
     <main>
@@ -214,8 +215,6 @@
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </form>
 
-                <p>julien.d.bigras@gmail.com</p>
-
                 <div class="socialMediaIcons">
                     <ul class="contactSocials">
                         <li>
@@ -242,6 +241,7 @@
                         </li>
                     </ul>
                 </div> <!-- closes socialMediaIcons-->
+                <p>julien.d.bigras@gmail.com</p>
             </div> <!-- closes contact wrapper -->
 
 
@@ -253,6 +253,7 @@
     </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="scripts.js"></script>
 
     <script>

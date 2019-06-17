@@ -267,6 +267,7 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
+  font-weight: bold;
 }
 
 h3 {
@@ -290,7 +291,7 @@ i {
 button {
   font-size: 0.9rem;
   font-weight: bold;
-  color: white;
+  color: #fcfcfc;
   background: #141414;
   border: 3px solid black;
   border-radius: 25px;
@@ -302,12 +303,11 @@ button {
 
 button:hover, button:focus {
   color: #141414;
-  background: white;
+  background: #fcfcfc;
 }
 
 header {
-  min-height: calc(100vh - 81px);
-  margin-bottom: 5%;
+  background: #fcfcfc;
 }
 
 .headerFlexContainer {
@@ -321,16 +321,21 @@ header {
 }
 
 .headerFlexContainer .headerTextContainer h1 {
-  margin: 25% 0 3%;
+  margin: 30% 0 3%;
 }
 
 .headerFlexContainer .headerTextContainer h2 {
   margin-bottom: 5%;
+  font-weight: normal;
 }
 
 .headerFlexContainer .headerPicContainer {
   width: 50%;
-  border-bottom: 1px solid grey;
+}
+
+.headerFlexContainer .headerPicContainer .headerPic {
+  width: 105%;
+  max-width: 600px;
 }
 
 nav {
@@ -344,32 +349,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navLinks li {
-  text-transform: uppercase;
-  margin-right: 20px;
-}
-
-.navLinks li:hover {
-  border-bottom: 3px solid white;
-}
-
-.navLinks li a {
-  color: white;
-}
-
-.navLinks li:last-child {
-  margin-right: 0;
 }
 
 .navLogo {
@@ -407,15 +386,49 @@ nav {
   border-radius: 50%;
 }
 
+.navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navLinks li {
+  text-transform: uppercase;
+  margin-right: 20px;
+  padding: 32px 0 3px;
+}
+
+.navLinks li:hover {
+  border-bottom: 3px solid #fcfcfc;
+}
+
+.navLinks li a {
+  color: #fcfcfc;
+}
+
+.navLinks li:last-child {
+  margin-right: 0;
+}
+
 .hamburger {
   display: none;
+  position: absolute;
+  top: 25px;
+  right: 10%;
 }
 
 .hamburger div {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #fcfcfc;
   margin: 5px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.aboutMe {
+  background: #c9d1dd;
+  padding: 5% 0;
 }
 
 .aboutMe h2 {
@@ -456,9 +469,9 @@ nav {
 }
 
 .skills {
-  background: #dbe7ff;
-  padding: 3.5% 0 1%;
-  margin: 2% 0;
+  border: 2px solid red;
+  background: #fcfcfc;
+  padding: 5% 0 1%;
 }
 
 .skills h2 {
@@ -493,7 +506,7 @@ nav {
   padding: 20px;
   border: 3px solid black;
   border-radius: 50%;
-  color: white;
+  color: #fcfcfc;
   background: #141414;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -501,7 +514,7 @@ nav {
 
 .skills ul li i:hover {
   color: #141414;
-  background: white;
+  background: #fcfcfc;
 }
 
 .skills ul li i:hover ~ p {
@@ -515,8 +528,8 @@ nav {
 }
 
 .portfolio {
-  background: white;
-  padding-bottom: 5%;
+  background: #c9d1dd;
+  padding: 5% 0;
 }
 
 .portfolio h2 {
@@ -588,7 +601,7 @@ nav {
 }
 
 .contact {
-  background: #dbe7ff;
+  background: #fcfcfc;
   padding-top: 5%;
 }
 
@@ -602,6 +615,12 @@ nav {
 .contact h3 {
   text-align: center;
   margin-bottom: 5%;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  text-align: center;
+  padding-bottom: 5%;
 }
 
 form {
@@ -649,7 +668,7 @@ form label {
   width: 40%;
   margin: 0 auto;
   margin-top: 3%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,12 +682,12 @@ form label {
   border: 3px solid black;
   border-radius: 50%;
   padding: 15px;
-  color: white;
+  color: #fcfcfc;
   background: #141414;
 }
 
 .contactSocials i:hover {
-  background: white;
+  background: #fcfcfc;
   color: #141414;
 }
 
@@ -678,7 +697,7 @@ footer {
 }
 
 footer p {
-  color: white;
+  color: #fcfcfc;
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px 0;
@@ -688,10 +707,16 @@ footer p {
   body {
     overflow-x: hidden;
   }
+  h1 {
+    font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
   .navLinks {
     position: absolute;
     right: 0;
-    height: calc(100vh - 81px);
+    height: 60vh;
     top: 81px;
     background: #141414;
     display: -webkit-box;
@@ -701,8 +726,6 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -715,7 +738,7 @@ footer p {
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
   .navLinks li {
-    margin-right: 0;
+    margin: 5px 0;
     padding-bottom: 3px;
   }
   .hamburger {
@@ -726,9 +749,26 @@ footer p {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  .exit .line1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .exit .line2 {
+    opacity: 0;
+  }
+  .exit .line3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+            transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
 
 @media (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+  }
+  .hamburger {
+    right: 5%;
+  }
   .aboutMeFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -806,6 +846,9 @@ footer p {
   }
   h3 {
     font-size: 1.5rem;
+  }
+  .navLinks {
+    width: 50%;
   }
   .skills ul li i {
     font-size: 2rem;
