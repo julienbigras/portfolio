@@ -8,7 +8,7 @@ header {
     display: flex;
         .headerTextContainer {
             width: 50%;
-            height: 100vh;
+            height: calc(100vh - 81px);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -22,7 +22,7 @@ header {
     }
     .headerPicContainer {
         width: 50%;
-        height: 550px;
+        height: 500px;
         background: url(../assets/julienBigrasHeaderPicBackground.png);
         background-size: cover;
         background-repeat: no-repeat;

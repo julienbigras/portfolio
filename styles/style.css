@@ -327,7 +327,7 @@ header {
 
 .headerFlexContainer .headerTextContainer {
   width: 50%;
-  height: 100vh;
+  height: calc(100vh - 81px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,7 +351,7 @@ header {
 
 .headerFlexContainer .headerPicContainer {
   width: 50%;
-  height: 550px;
+  height: 500px;
   background: url(../assets/julienBigrasHeaderPicBackground.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -921,6 +921,9 @@ footer p {
   }
   .skills ul li p {
     margin: 15px 0 5px;
+  }
+  .portfolio h4 {
+    font-size: 1.2rem;
   }
   .projectContainer .projectText {
     width: 100%;
