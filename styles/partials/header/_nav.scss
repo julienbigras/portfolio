@@ -3,45 +3,21 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 100;
-}
-
-.navFlexContainer {
-    display: flex;
-    justify-content: space-between;
+    .navFlexContainer {
+        height: 81px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .navLogo {
-    display: flex;
-    .headshot {
-        max-height: 65px;
-        max-width: 65px;
-        margin: 8px 20px 8px 0;
-        img {
-            border-radius: 50%;
-        }
-    }
-    .textContent {
-        display: flex;
-        align-items: center;
-        p {
-            color: $bgMain;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 2rem;
-        }
-    }
-}
-
-.navLogo p {
-    color: $bgMain;
-}
-
-.headshot {
-    max-height: 75px;
-    max-width: 75px;
-    img {
-        border-radius: 50%;
-    }
+     p {
+        color: $bgMain;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5rem;
+     }
 }
 
 .navLinks {
@@ -49,7 +25,7 @@ nav {
     li {
         text-transform: uppercase;
         margin-right: 20px;
-        padding-top: 32px;
+        // padding-top: 32px;
         &:hover a,
         a:focus {
             border-bottom: 3px solid $bgMain;
@@ -67,7 +43,7 @@ nav {
 .hamburger {
     display: none;
     position: absolute;
-    top: 25px;
+    top: 26px;
     right: 10%;
 }
 

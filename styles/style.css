@@ -367,58 +367,24 @@ nav {
   z-index: 100;
 }
 
-.navFlexContainer {
+nav .navFlexContainer {
+  height: 81px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.navLogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navLogo .headshot {
-  max-height: 65px;
-  max-width: 65px;
-  margin: 8px 20px 8px 0;
-}
-
-.navLogo .headshot img {
-  border-radius: 50%;
-}
-
-.navLogo .textContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.navLogo .textContent p {
+.navLogo p {
   color: #fcfcfc;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 2rem;
-}
-
-.navLogo p {
-  color: #fcfcfc;
-}
-
-.headshot {
-  max-height: 75px;
-  max-width: 75px;
-}
-
-.headshot img {
-  border-radius: 50%;
+  font-size: 1.5rem;
 }
 
 .navLinks {
@@ -430,7 +396,6 @@ nav {
 .navLinks li {
   text-transform: uppercase;
   margin-right: 20px;
-  padding-top: 32px;
 }
 
 .navLinks li:hover a,
@@ -450,7 +415,7 @@ nav {
 .hamburger {
   display: none;
   position: absolute;
-  top: 25px;
+  top: 26px;
   right: 10%;
 }
 
