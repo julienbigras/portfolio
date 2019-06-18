@@ -35,7 +35,7 @@
                         <li><a class="scrollTo" href="#contact">Contact</a></li>
                     </ul>
                 </div> <!-- closes navLinks-->
-                <div class="hamburger">
+                <div class="hamburger" tabindex="1">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
@@ -203,16 +203,16 @@
                 <form method="POST" action="http://www.focuspocus.io/magic/julien.d.bigras@gmail.com">
                     <div class="nameInput">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" required>
                     </div>
 
                     <div class="emailInput">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="name">
+                        <input type="email" id="email" name="name" required>
                     </div>
 
                     <label for="message">What Can I Do For You?</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
 
                     <input type="submit" value="send">
                 </form>

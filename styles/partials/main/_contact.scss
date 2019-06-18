@@ -45,6 +45,17 @@ form {
         margin-bottom: 5%;
         resize: none;
     }
+    input[type=text]:hover,
+    input[type=email]:hover, 
+    input[type=text]:active,
+    input[type=email]:active, 
+    input[type=text]:focus,
+    input[type=email]:focus,
+    textarea:hover,
+    textarea:focus,
+    textarea:active {
+        background: darken($bgAccent, 15);
+    }
     label {
         margin-bottom: 1.5%;
     }
@@ -68,7 +79,8 @@ form {
         color: $bgMain;
         background: $black;
     }
-    i:hover {
+    i:hover,
+    a:focus > i {
         background: $bgMain;
         color: $black;
     }

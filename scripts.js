@@ -5,25 +5,33 @@ const navSlide = () => {
     const nav = $('.navLinks');
 
     // when burger is clicked, call an anonymous function to do the following
-    burger.on('click', () => {
+    burger.on('click keydown', (e) => {
+        const key = e.keyCode;
+
+        if (key === 9) {
+            return;
+        } else {
         // toggle a class of navActive on the nav section
         nav.toggleClass('navActive');
         // toggle a class of exit on the burger
         burger.toggleClass('exit');
+        }
     })
 }
 
 // FUNCTION TO CLOSE RESPONSIVE NAV ONCE LINK IS CLICKED
 const closeOnClick = () => {
-    // save a elements in the navLinks ul in a variable
+    // save a elements in the navLinks ul in a variable, save navLinks ul to variable
     const link = $('.navLinks a');
+    const responsiveNav = $('.navLinks');
+    const burgerIcon = $('.hamburger');
 
     // when links are clicked, call an anonymous function
     link.on('click', () => {
         // remove the class of navActive from the navLinks ul
-        $('.navLinks').removeClass('navActive');
+        responsiveNav.removeClass('navActive');
         // remove the class of exit from the hamburger div
-        $('.hamburger').removeClass('exit');
+        burgerIcon.removeClass('exit');
     })
 }
 

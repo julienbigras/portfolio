@@ -50,7 +50,8 @@ nav {
         text-transform: uppercase;
         margin-right: 20px;
         padding-top: 32px;
-        &:hover a {
+        &:hover a,
+        a:focus {
             border-bottom: 3px solid $bgMain;
         }
         a {

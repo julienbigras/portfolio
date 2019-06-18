@@ -432,7 +432,8 @@ nav {
   padding-top: 32px;
 }
 
-.navLinks li:hover a {
+.navLinks li:hover a,
+.navLinks li a:focus {
   border-bottom: 3px solid #fcfcfc;
 }
 
@@ -717,6 +718,18 @@ form textarea {
   resize: none;
 }
 
+form input[type=text]:hover,
+form input[type=email]:hover,
+form input[type=text]:active,
+form input[type=email]:active,
+form input[type=text]:focus,
+form input[type=email]:focus,
+form textarea:hover,
+form textarea:focus,
+form textarea:active {
+  background: #acb2bf;
+}
+
 form label {
   margin-bottom: 1.5%;
 }
@@ -747,7 +760,8 @@ form input[type=submit] {
   background: #141414;
 }
 
-.contactSocials i:hover {
+.contactSocials i:hover,
+.contactSocials a:focus > i {
   background: #fcfcfc;
   color: #141414;
 }
