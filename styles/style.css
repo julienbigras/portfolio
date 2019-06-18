@@ -967,6 +967,9 @@ footer p {
   h3 {
     font-size: 1.1rem;
   }
+  .navLinks {
+    width: 100%;
+  }
   .headerFlexContainer .headerPicContainer {
     width: 100%;
     height: 400px;
