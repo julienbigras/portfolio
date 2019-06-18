@@ -3,7 +3,6 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 100;
-    // margin-top: -81px;
 }
 
 .navFlexContainer {
@@ -23,8 +22,18 @@ nav {
     }
     .textContent {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        p {
+            color: $bgMain;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 2rem;
+        }
     }
+}
+
+.navLogo p {
+    color: $bgMain;
 }
 
 .headshot {

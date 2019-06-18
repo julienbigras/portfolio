@@ -28,7 +28,8 @@ form {
         display: flex;
         flex-direction: column;
     }
-    input {
+    input[type=text],
+    input[type=email] {
         border: $bottom;
         background: $bgAccent;
         border-radius: 25px;
@@ -41,17 +42,21 @@ form {
         border-radius: 25px;
         background: $bgAccent;
         padding: 10px 0 10px 20px;
+        margin-bottom: 5%;
         resize: none;
     }
     label {
         margin-bottom: 1.5%;
     }
+    input[type=submit] {
+        width: 40%;
+        margin: 0 auto;
+    }
 }
 
 .contactSocials {
     width: 40%;
-    margin: 0 auto;
-    margin-top: 3%;
+    margin: 6% auto 0;
     padding-bottom: 2%;
     display: flex;
     justify-content: space-between;

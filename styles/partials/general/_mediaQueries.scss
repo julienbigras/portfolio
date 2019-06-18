@@ -69,12 +69,6 @@
         right: 5%;
     }
 
-    // HEADER SECTION
-
-    .headerFlexContainer .headerTextContainer h1 {
-        margin-top: 35%;
-    }
-
     // ABOUT ME SECTION
 
     .aboutMeFlexContainer {
@@ -147,12 +141,12 @@
     }
 }
 
-@media (max-width: 805px) {
+@media (max-width: 892px) {
 
     // GENERAL STYLES
 
     h1 {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     h2 {
@@ -161,6 +155,16 @@
 
     h3 {
         font-size: 1.5rem;
+    }
+
+    .headerFlexContainer {
+        .headerTextContainer {
+            width: 52.5%;
+        }
+        .headerPicContainer {
+            width: 47.5%;
+            height: 500px;
+        }
     }
 }
 
@@ -172,25 +176,15 @@
         flex-direction: column;
             .headerTextContainer {
                 width: 100%;
-                display: flex;
-                justify-content: center;
-            .innerTextContainer {
-                position: static;
-            }
+                height: auto;
+                align-items: center;
             h1 {
                 margin: 5% 0 3%;
             }
-            h2 {
-                margin-bottom: -5%;
-                font-weight: normal;
-            }
         }
         .headerPicContainer {
-            width: 100%;
-            .headerPic {
-                width: 80%;
-                margin: 0 auto;
-            }
+            width: 85%;
+            height: 400px;
         }
     }
 
@@ -198,6 +192,12 @@
 
     .navLinks {
         width: 50%;
+    }
+
+    // ABOUT ME SECTION
+
+    .aboutMeFlexContainer .aboutMePicOuterContainer .aboutMePic {
+        width: 60%;
     }
 
     // SKILLS SECTION
@@ -233,12 +233,9 @@
         font-size: 0.9rem;
     }
 
-    .contactSocials {
-        // width: %;
-        i {
-            font-size: 1.2rem;
-            padding: 10px;
-        }
+    .contactSocials i {
+        font-size: 1.2rem;
+        padding: 10px;
     }
 }
 
@@ -247,15 +244,38 @@
     // GENERAL
 
     h1 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    // HEADER 
+
+    .headerFlexContainer {
+        .headerPicContainer {
+            width: 100%;
+            height: 400px;
+        }
+    }
+
+    // ABOUT ME SECTION
+
+    .aboutMeFlexContainer .aboutMePicOuterContainer .aboutMePic {
+        width: 80%;
+    }
+
+    .skills ul li {
+        width: 50%;
+        i {
+            font-size: 3rem;
+            padding: 18px;
+        }
     }
 
     // CONTACT SECTION

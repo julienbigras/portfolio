@@ -1,18 +1,19 @@
 header {
     background: $bgMain;
     padding-top: 81px;
+    height: 100vh;
 }
 
 .headerFlexContainer {
     display: flex;
         .headerTextContainer {
             width: 50%;
-        .innerTextContainer {
-            position: relative;
-            left: 12%;
-        }
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         h1 {
-            margin: 30% 0 3%;
+            margin-bottom: 3%;
         }
         h2 {
             margin-bottom: 5%;
@@ -21,10 +22,12 @@ header {
     }
     .headerPicContainer {
         width: 50%;
-        .headerPic {
-            width: 105%;
-            max-width: 600px;
-            margin-left: 5%;
-        }
+        height: 550px;
+        background: url(../assets/julienBigrasHeaderPicBackgroundEdit.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
