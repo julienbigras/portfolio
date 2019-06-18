@@ -1,9 +1,6 @@
 @media (max-width: 1100px) {
 
     // GENERAL
-    body {
-        overflow-x: hidden;
-    }
 
     h1 {
         font-size: 3.2rem;
@@ -11,6 +8,15 @@
 
     h2 {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    // GENERAL STYLES
+
+    .wrapper {
+        width: 90%;
     }
 
     // NAV BAR
@@ -36,6 +42,7 @@
     .hamburger {
         display: block;
         cursor: pointer;
+        right: 5%;
     }
 
     .navActive {
@@ -53,21 +60,6 @@
     .exit .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
-}
-
-@media (max-width: 1000px) {
-
-    // GENERAL STYLES
-
-    .wrapper {
-        width: 90%;
-    }
-
-    // NAV BAR
-
-    .hamburger {
-        right: 5%;
-    }
 
     // ABOUT ME SECTION
 
@@ -83,11 +75,6 @@
         }
         .aboutMeTextContent {
             width: 100%;
-            .aboutMeButtonContainer {
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-            }
         }
     }
 

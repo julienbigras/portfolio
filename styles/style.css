@@ -514,7 +514,7 @@ nav {
 
 .aboutMeFlexContainer .aboutMeTextContent p:first-child {
   font-weight: bold;
-  text-align: center;
+  font-size: 1.2rem;
 }
 
 .aboutMeFlexContainer .aboutMeTextContent p:last-child {
@@ -765,14 +765,17 @@ footer p {
 }
 
 @media (max-width: 1100px) {
-  body {
-    overflow-x: hidden;
-  }
   h1 {
     font-size: 3.2rem;
   }
   h2 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
   }
   .navLinks {
     position: absolute;
@@ -804,6 +807,7 @@ footer p {
   .hamburger {
     display: block;
     cursor: pointer;
+    right: 5%;
   }
   .navActive {
     -webkit-transform: translateX(0);
@@ -819,15 +823,6 @@ footer p {
   .exit .line3 {
     -webkit-transform: rotate(45deg) translate(-5px, -6px);
             transform: rotate(45deg) translate(-5px, -6px);
-  }
-}
-
-@media (max-width: 1000px) {
-  .wrapper {
-    width: 90%;
-  }
-  .hamburger {
-    right: 5%;
   }
   .aboutMeFlexContainer {
     -webkit-box-orient: vertical;
@@ -847,14 +842,6 @@ footer p {
   }
   .aboutMeFlexContainer .aboutMeTextContent {
     width: 100%;
-  }
-  .aboutMeFlexContainer .aboutMeTextContent .aboutMeButtonContainer {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
   .skills ul li i {
     font-size: 3rem;
