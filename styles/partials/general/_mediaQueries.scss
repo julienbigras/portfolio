@@ -75,6 +75,9 @@
         }
         .aboutMeTextContent {
             width: 100%;
+            p:first-child {
+                text-align: center;
+            }
         }
     }
 
@@ -253,9 +256,18 @@
 
     // ABOUT ME SECTION
 
-    .aboutMeFlexContainer .aboutMePicOuterContainer .aboutMePic {
-        width: 80%;
+    .aboutMeFlexContainer {
+        .aboutMePicOuterContainer .aboutMePic {
+            width: 80%;
+        }    
+        .aboutMeTextContent {
+            p:first-child {
+                font-size: 1rem;;
+            }
+        }
     }
+
+    // SKILLS SECTION
 
     .skills ul li {
         width: 50%;
@@ -273,5 +285,9 @@
 
     .contactSocials {
         width: 80%;
+    }
+
+    footer p {
+        font-size: 0.75rem;
     }
 }
