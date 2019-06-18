@@ -8,6 +8,7 @@ const navSlide = () => {
     burger.on('click keydown', (e) => {
         const key = e.keyCode;
 
+        // if statement ensures the reponsive menu won't hide on a tab keydown
         if (key === 9) {
             return;
         } else {

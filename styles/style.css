@@ -294,6 +294,7 @@ i {
 button,
 input[type=submit] {
   font-size: 0.9rem;
+  line-height: 1rem;
   font-weight: bold;
   color: #fcfcfc;
   background: #141414;
