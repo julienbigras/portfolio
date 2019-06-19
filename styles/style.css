@@ -581,6 +581,19 @@ nav .navFlexContainer {
   width: 55%;
 }
 
+.projectContainer .projectText .pairedProgramming {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.projectContainer .projectText .friend {
+  color: #141414;
+}
+
+.projectContainer .projectText .friend:hover {
+  border-bottom: 1px solid #141414;
+}
+
 .projectContainer .projectText .projectButtonContainer {
   display: -webkit-box;
   display: -ms-flexbox;

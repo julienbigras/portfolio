@@ -24,6 +24,16 @@
     margin: 8% 0;
     .projectText {
         width: 55%;
+        .pairedProgramming {
+            margin-top: 2%;
+            text-align: center;
+        }
+        .friend {
+            color: $black;
+        }
+        .friend:hover {
+            border-bottom: 1px solid $black;
+        }
         .projectButtonContainer {
             display: flex;
             justify-content: center;
