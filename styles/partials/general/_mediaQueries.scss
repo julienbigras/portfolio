@@ -147,20 +147,27 @@
         font-size: 1.5rem;
     }
 
+    // HEADER SECTION
+
     .headerFlexContainer {
         .headerTextContainer {
-            width: 52.5%;
+            width: 75%;
         }
-        .headerPicContainer {
-            width: 47.5%;
-            height: 500px;
-        }
+        // .headerPicContainer {
+        //     width: 47.5%;
+        //     height: 500px;
+        // }
     }
 }
 
 @media (max-width: 682px) {
 
     // HEADER SECTION 
+
+    header {
+        background-size: 400px;
+        background-position: bottom;
+    }
 
     .headerFlexContainer {
         flex-direction: column;
@@ -172,10 +179,10 @@
                 margin: 5% 0 3%;
             }
         }
-        .headerPicContainer {
-            width: 85%;
-            height: 400px;
-        }
+        // .headerPicContainer {
+        //     width: 85%;
+        //     height: 400px;
+        // }
     }
 
     // NAV BAR 
@@ -257,12 +264,12 @@
 
     // HEADER 
 
-    .headerFlexContainer {
-        .headerPicContainer {
-            width: 100%;
-            height: 400px;
-        }
-    }
+    // .headerFlexContainer {
+    //     .headerPicContainer {
+    //         width: 100%;
+    //         height: 400px;
+    //     }
+    // }
 
     // ABOUT ME SECTION
 

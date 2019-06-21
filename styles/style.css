@@ -317,6 +317,10 @@ header {
   background: #fcfcfc;
   padding-top: 81px;
   height: 100vh;
+  background: url(../assets/julienBigrasHeaderPicBackground.png);
+  background-size: 550px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .headerFlexContainer {
@@ -347,17 +351,6 @@ header {
 .headerFlexContainer .headerTextContainer h2 {
   margin-bottom: 5%;
   font-weight: normal;
-}
-
-.headerFlexContainer .headerPicContainer {
-  width: 50%;
-  height: 500px;
-  background: url(../assets/julienBigrasHeaderPicBackground.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 nav {
@@ -893,15 +886,15 @@ footer p {
     font-size: 1.5rem;
   }
   .headerFlexContainer .headerTextContainer {
-    width: 52.5%;
-  }
-  .headerFlexContainer .headerPicContainer {
-    width: 47.5%;
-    height: 500px;
+    width: 75%;
   }
 }
 
 @media (max-width: 682px) {
+  header {
+    background-size: 400px;
+    background-position: bottom;
+  }
   .headerFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -917,10 +910,6 @@ footer p {
   }
   .headerFlexContainer .headerTextContainer h1 {
     margin: 5% 0 3%;
-  }
-  .headerFlexContainer .headerPicContainer {
-    width: 85%;
-    height: 400px;
   }
   .navLinks {
     width: 50%;
@@ -965,10 +954,6 @@ footer p {
   }
   .navLinks {
     width: 100%;
-  }
-  .headerFlexContainer .headerPicContainer {
-    width: 100%;
-    height: 400px;
   }
   .aboutMeFlexContainer .aboutMePicOuterContainer .aboutMePic {
     width: 80%;

@@ -2,6 +2,10 @@ header {
     background: $bgMain;
     padding-top: 81px;
     height: 100vh;
+    background: url(../assets/julienBigrasHeaderPicBackground.png);
+    background-size: 550px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .headerFlexContainer {
@@ -20,14 +24,14 @@ header {
             font-weight: normal;
         }
     }
-    .headerPicContainer {
-        width: 50%;
-        height: 500px;
-        background: url(../assets/julienBigrasHeaderPicBackground.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+    // .headerPicContainer {
+    //     width: 50%;
+    //     height: 500px;
+    //     background: url(../assets/julienBigrasHeaderPicBackground.png);
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 0;
+    // }
 }
