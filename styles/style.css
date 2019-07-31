@@ -886,7 +886,7 @@ footer p {
     font-size: 1.5rem;
   }
   .headerFlexContainer .headerTextContainer {
-    width: 75%;
+    width: 60%;
   }
 }
 
@@ -894,12 +894,14 @@ footer p {
   header {
     background-size: 400px;
     background-position: bottom;
+    min-height: 568px;
   }
   .headerFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 12%;
   }
   .headerFlexContainer .headerTextContainer {
     width: 100%;
